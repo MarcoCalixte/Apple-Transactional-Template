@@ -92,10 +92,6 @@
          margin: 0!important;
       }
 
-      .float {
-        float: left;
-      }
-
 
 
 	@media only screen and (max-width:600px){
@@ -112,7 +108,9 @@
         .full80 { width: 80%!important; }
         .full100 { width: 100%!important; }
         .align-center { text-align:center!important; align-items: center!important;}
-        .three-columns .padding { padding-right: 0!important; padding-left: 0!important; }
+        .border-right { border-right: 0px solid #ccc!important;}
+        .padding-left { padding-left: 14px; }
+        .width-2 { width: 20%!important; }
 	}
 
 	@media only screen and (max-width:480px){
@@ -121,7 +119,7 @@
         .hm { display: none!important; font-size:0px!important; visibility: hidden!important; overflow: hidden!important; mso-hide: all!important; }
         .align-center { text-align:center!important; align-items: center!important;}
         .full100 { width: 100%!important; }
-        img.three-col-img { width: 200px!important; max-width: 200px!important; }
+        .padding-left { padding-left: 11px!important; }
 	}
 
     /* Custom Dark Mode Colors */
@@ -172,7 +170,7 @@
                    <table class="container" width="90%" cellpadding="0" cellspacing="0" border="0" role="presentation">
                      <tr>
                         <td align="left" width="50%" class="db dw align-center">
-                            <img src="https://i.postimg.cc/4NLhjVLQ/Apple-Logo.png" width="80" height="auto" style="margin:0; padding:0; border:none; display:block;" border="0" class="image" alt="logo">
+                            <img src="https://i.postimg.cc/4NLhjVLQ/Apple-Logo.png" width="80" height="auto" style="margin:0; padding:0; border:none; display:block;" border="0" class="image width-2" alt="logo">
                         </td>
 
                         <td align="right" width="50%" class="db dw align-center">
@@ -232,16 +230,16 @@
                    </table>
                  </td>
 
-                 <td width="320" align="left" class="db dw">
+                 <td width="320" align="left" class="db dw padding-left">
                   <table bgcolor="#f5f5f7" class="container" width="99%" cellpadding="0" cellspacing="0" border="0" role="presentation">
                     <tr>
-                      <td align="left" style="padding-left: 20px; padding-top: 19px; padding-bottom: 19px;">
+                      <td align="left" class="align-center" style="padding-left: 20px; padding-top: 19px; padding-bottom: 19px;">
                         <p style="color: #a9a9a9; font-weight: 300; font-size:12px;">
                            BILLED TO<br>
-                           <span style="color: #262626;">Apple Card </span> <br>
+                           <span style="color: #262626;">Apple Card</span> <br>
                            <span style="color: #262626;">Marcorel Calixte</span> <br>
-                           <span style="color: #262626;">30 lincoln st</span> <br>
-                           <span style="color: #262626;">Hartford, CT 06106</span> <br>
+                           <span style="color: #262626;">450 West Newburgh st</span> <br>
+                           <span style="color: #262626;">West Hartford, CT 06113</span> <br>
                            <span style="color: #262626;">USA</span> <br>
                         </p>
                       </td>
@@ -283,7 +281,7 @@
        </tr>
       <!-- app store end-->
 
-
+      <!-- receipt part 2 start -->
       <tr>
         <td align="center" valign="top">
           <table class="container" width="640" cellpadding="0" cellspacing="0" border="0" role="presentation">
@@ -306,10 +304,9 @@
                          <td align="left" valign="top">
                            <p style="font-size: 14px">
                               <span style="font-weight: 500;">CleanMyMac X </span><br>
-                              <span style="font-weight: 300;color: #a9a9a9;">CleanMyMac X Yearly Access (Yearly) </span><br>
-                              <span style="font-weight: 300;color: #a9a9a9;">Renews Apr 23, 2024</span> <br>
+                              <span style="font-weight: 300;color: #a9a9a9; font-size: 12px;">CleanMyMac X Yearly Access (Yearly) </span><br>
+                              <span style="font-weight: 300;color: #a9a9a9; font-size: 12px;">Renews Apr 23, 2024</span> <br>
                               <a href="https://www.example.com" target="_blank" style="color: rgb(84, 112, 213); font-size: 13px;">Report a Problem</a>
-
                            </p>
                          </td>
                        </tr>
@@ -324,12 +321,33 @@
               <td align="center" valign="top" width="320" class="db dw" style="padding-right: 10px;">
                <table class="container" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
                  <tr>
-                   <td align="right" valign="top" class="align-center">
-                     <h4>
+                   <td align="right" valign="top" class="align-center hm">
+                     <h4 style="font-weight: 500;">
                         $34.99
                      </h4>
                    </td>
                  </tr>
+
+                  <!-- spacer -->
+                  <tr>
+                    <td height="30" style="font-size:30px; line-height:30px; mso-line-height-rule:exactly;"> &nbsp;</td>
+                  </tr>
+                  <!-- spacer -->
+
+                 <tr>
+                  <td align="right" valign="top" class="align-center">
+                    <h4 style="font-weight: 500;">
+                       <span style="font-weight: 300;">Subtotal:</span>&nbsp; $34.99
+                    </h4>
+                  </td>
+                </tr>
+
+                <td align="right" valign="top" class="align-center">
+                  <h4 style="font-weight: 500;">
+                     <span style="font-weight: 300;">Tax:</span>&nbsp; $2.22
+                  </h4>
+                </td>
+              </tr>
                </table>
              </td>
             </tr>
@@ -337,15 +355,102 @@
 
         </td>
       </tr>
+      <!-- receipt part 2 end -->
+
+      <!-- receipt part 3 start -->
+      <tr>
+        <td align="center" valign="top">
+          <table class="container" width="630" cellpadding="0" cellspacing="0" border="0" role="presentation" style="border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;">
+            <tr>
+              <td align="right" width="315" class="db dw">
+                <table class="container border-right" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" style="border-right: 1px solid #ccc;">
+                  <tr>
+                    <td align="right" style="padding-right: 30px;" class="align-center">
+                      <h5 style="font-weight: 400; text-transform: uppercase;">Total</h5>
+                    </td>
+                  </tr>
+                </table>
+
+              </td>
+
+              <td align="center" width="100" class="db dw">
+                <table class="container" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr>
+                    <td align="right" class="align-center">
+                      <h2 style="font-weight: 500;">$37.21</h2>
+                    </td>
+                  </tr>
+                </table>
+
+              </td>
+            </tr>
+          </table>
+
+        </td>
+      </tr>
+      <!-- receipt part 3 end -->
+
+      <!--  footer start -->
+      <tr>
+        <td align="center" style="padding-top: 10px; padding-bottom: 40px">
+          <table class="container" width="640" cellpadding="0" cellspacing="0" border="0" role="presentation">
+            <tr>
+              <td align="center">
+                <table class="container" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr>
+                    <td align="center">
+                      <p style="font-weight: 300; color: #a3a3a3; font-size: 13px"> Get help with subscriptions and purchases. <a href="https://www.example.com" target="_blank" style="color: rgb(84, 112, 213); font-size: 12px;"> Visit Apple Support.</a> </p>
+                      <p style="font-weight: 300; color: #a3a3a3; font-size: 13px"> Learn how to <a href="https://www.example.com" target="_blank" style="font-size: 12px; color: rgb(84, 112, 213);"> manage your password preferences</a> for iTunes, Apple Books, and App Store purchases.
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+
+              </td>
+            </tr>
+
+             <!-- spacer -->
+             <tr>
+              <td height="30" style="font-size:30px; line-height:30px; mso-line-height-rule:exactly;"> &nbsp;</td>
+            </tr>
+            <!-- spacer -->
+
+            <tr>
+              <td align="center">
+                <table class="container" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr>
+                    <td align="center">
+                      <img src="https://i.postimg.cc/4NLhjVLQ/Apple-Logo.png" width="60" height="auto" style="margin:0; padding:0; border:none; display:block;" border="0" alt="">
+                      <p style="font-size:12px;"><a href="https://www.example.com" target="_blank" style="font-size: 12px; color: rgb(84, 112, 213);">Apple ID Summary</a> • <a href="https://www.example.com" target="_blank" style="font-size: 12px; color: rgb(84, 112, 213);">Terms of Sale</a> • <a href="https://www.example.com" target="_blank" style="font-size: 12px; color: rgb(84, 112, 213);">Privacy Policy</a></p>
+                    </td>
+                  </tr>
+                </table>
+
+              </td>
+            </tr>
 
 
+            <tr>
+              <td align="center">
+                <table class="container" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                  <tr>
+                    <td align="center">
+                      <p style="font-size: 13px; color: #a3a3a3;">Copyright © 2023 Apple Inc. <br>
+                        <a href="https://www.example.com" target="_blank" style="font-size: 12px; color: rgb(84, 112, 213); ">All rights reserved</a>
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+
+              </td>
+            </tr>
 
 
+          </table>
 
-
-
-
-
+        </td>
+      </tr>
+      <!--  footer end -->
 
 
     </table>
